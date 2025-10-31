@@ -168,6 +168,25 @@ main {
     flex-wrap: wrap;
 }
 
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15PX;
+    text-align: center;
+    /* It will stop this wrapping on screens that are too narrow to show two
+boxes next to each other, and they'll expand to take up the available
+space in the row when there is any. */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Creates a grid of meetup times divs over the background image */
+    border: 2px solid white;
+}
+
+#times h3 {
+    /*Overides the heading color set in general styles*/
+    color: #fafafa;
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
